@@ -167,6 +167,7 @@ def display_errors(model,X,y):
     yhat = np.argmax(f, axis=1)
     doo = yhat != y[:,0]
     idxs = np.where(yhat != y[:,0])[0]
+    print(idxs)
     if len(idxs) == 0:
         print("no errors found")
     else:
